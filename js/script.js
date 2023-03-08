@@ -62,6 +62,6 @@ for (let i = 0; i < teamMembers.length; i++) {
 
     memberEl.append(memberListEl);
 
-    memberListEl.innerHTML = `Nome: ${teamMembers[i].nome}; <br> Ruolo: ${teamMembers[i].ruolo}; <br> Foto: ${teamMembers[i].foto}`;
+    memberListEl.innerHTML = `<img src="${teamMembers[i].foto}"> <span style = "font-weight: bold">${teamMembers[i].nome}</span> <br> <span style = "font-size: 12px">${teamMembers[i].ruolo}</span>`;
 
 }
