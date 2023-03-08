@@ -17,6 +17,9 @@ Organizzare i singoli membri in card/schede
 */
 
 
+
+
+
 let teamMembers = [
     {
         nome: "Wayne Barnett",
@@ -49,3 +52,10 @@ let teamMembers = [
         foto: "../img/barbara-ramos-graphic-designer.jpg"
     }
 ];
+
+
+for (let i = 0; i < teamMembers.length; i++) {
+
+    console.log(teamMembers[i]);
+
+}
