@@ -17,7 +17,7 @@ Organizzare i singoli membri in card/schede
 */
 
 
-
+let memberEl = document.getElementById("members");
 
 
 let teamMembers = [
@@ -57,5 +57,11 @@ let teamMembers = [
 for (let i = 0; i < teamMembers.length; i++) {
 
     console.log(teamMembers[i]);
+
+    let memberListEl = document.createElement("li");
+
+    memberEl.append(memberListEl);
+
+    memberListEl.innerHTML = `Nome: ${teamMembers[i].nome}; <br> Ruolo: ${teamMembers[i].ruolo}; <br> Foto: ${teamMembers[i].foto}`;
 
 }
