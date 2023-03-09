@@ -56,7 +56,11 @@ let teamMembers = [
 
 for (let i = 0; i < teamMembers.length; i++) {
 
-    console.log(teamMembers[i]);
+    for (let memberKey in teamMembers[i]) {
+
+        console.log(memberKey + ": " + teamMembers[i][memberKey]);
+
+    }
 
     let memberListEl = document.createElement("li");
 
